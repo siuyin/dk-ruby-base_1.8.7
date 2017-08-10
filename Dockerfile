@@ -1,4 +1,4 @@
-FROM siuyin/ubuntu:build_essential
+FROM siuyin/ubuntu:build-essential
 RUN apt install -y zlib1g zlib1g-dev libssl-dev libreadline-dev
 ADD ruby-1.8.7-p357.tar.gz /build/
 ADD rubygems-1.3.5.tgz /build/
