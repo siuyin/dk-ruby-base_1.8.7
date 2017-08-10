@@ -1,4 +1,4 @@
-FROM siuyin/ruby:base-1.8.7
+FROM siuyin/ruby:base-1.8.7 
 RUN apt install -y libsqlite3-dev libxml2 libxslt1.1 libxslt1-dev \
   libpq5 libpq-dev libzmq1 curl wget sqlite3
 RUN ln -s /usr/lib/x86_64-linux-gnu/libzmq.so.1 /usr/local/lib/libzmq.so
