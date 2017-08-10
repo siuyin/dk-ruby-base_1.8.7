@@ -1,0 +1,46 @@
+gem fetch -V \
+actionmailer -v 2.3.3 \
+actionpack -v 2.3.3 \
+activerecord -v 2.3.3
+rack -v 1.0.1\
+capistrano -v 2.5.18 \
+cgi_multipart_eof_fix -v 2.5.0 \
+net-ssh -v 2.0.22 \
+net-ssh-gateway -v 1.0.1 \
+net-scp -v 1.0.2 \
+net-sftp -v 2.0.4 \
+highline -v 1.5.2 \
+mongrel -v 1.1.5 \
+gem_plugin -v 0.2.3 \
+daemons -v 1.0.10 \
+fastthread -v 1.0.7 \
+nokogiri -v 1.5.0 \
+activeresource -v 2.3.3 \
+passenger -v 4.0.40 \
+daemon_controller -v 1.2.0 \
+spork -v 0.8.5 \
+spork-testunit -v 0.0.6 \
+pg -v 0.14.1 \
+ffi -v 1.1.5 \
+ffi-rzmq -v 0.9.3 \
+mocha -v 0.9.12 \
+unittest-colorizer -v 0.1.0 \
+colored -v 1.2
+
+gem fetch -V \
+
+gem install --local --no-ri --no-rdoc \
+rake -v 0.8.7 \
+rails -v 2.3.3 \
+actionmailer -v 2.3.3 \
+actionpack -v 2.3.3 \
+activerecord -v 2.3.3 \
+capistrano -v 2.5.18 \
+mongrel -v 1.1.5 \
+nokogiri -v 1.5.0 \
+passenger -v 4.0.40 \
+spork-testunit -v 0.0.6 \
+pg -v 0.14.1 \
+ffi-rzmq -v 0.9.3 \
+mocha -v 0.9.12 \
+unittest-colorizer -v 0.1.0
