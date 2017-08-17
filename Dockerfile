@@ -3,6 +3,7 @@ RUN apt update && apt install -y libsqlite3-dev libxml2 libxslt1.1 libxslt1-dev 
   libpq5 libpq-dev libzmq1 curl wget sqlite3 git
 RUN ln -s /usr/lib/x86_64-linux-gnu/libzmq.so.1 /usr/local/lib/libzmq.so
 COPY gems /gems
+COPY inotify /usr/lib/x86_64-linux-gnu/
 RUN cd /gems && gem install --local --no-ri --no-rdoc \
 	 rake -v 0.8.7 \
 	 rails -v 2.3.3 \
