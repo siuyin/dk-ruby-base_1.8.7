@@ -18,5 +18,7 @@ RUN cd /gems && gem install --local --no-ri --no-rdoc \
 	 pg -v 0.14.1 \
 	 ffi-rzmq -v 0.9.3 \
 	 mocha -v 0.9.12 \
+	 fastercsv -v 1.5.3 \
 	 unittest-colorizer -v 0.1.0
 CMD ["bash"]
+
