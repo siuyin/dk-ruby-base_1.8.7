@@ -1,6 +1,6 @@
 FROM siuyin/ruby:base-1.8.7 
 RUN apt update && apt install -y libsqlite3-dev libxml2 libxslt1.1 libxslt1-dev \
-  libpq5 libpq-dev libzmq1 curl wget sqlite3 git
+  libpq5 libpq-dev libzmq1 curl wget sqlite3 git tmux vim tzdata
 RUN ln -s /usr/lib/x86_64-linux-gnu/libzmq.so.1 /usr/local/lib/libzmq.so
 COPY gems /gems
 COPY inotify /usr/local/lib/ruby/site_ruby/1.8/x86_64-linux/
