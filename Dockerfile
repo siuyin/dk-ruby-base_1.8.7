@@ -1,6 +1,6 @@
 FROM siuyin/ruby:base-1.8.7 
 RUN apt update && apt install -y libsqlite3-dev libxml2 libxslt1.1 libxslt1-dev \
-  libpq5 libpq-dev libzmq1 curl wget sqlite3 git tmux vim tzdata postgresql-client
+  libpq5 libpq-dev libzmq1 curl wget sqlite3 git tmux vim tzdata postgresql-client libmysqlclient-dev
 RUN ln -s /usr/lib/x86_64-linux-gnu/libzmq.so.1 /usr/local/lib/libzmq.so
 COPY gems /gems
 COPY inotify /usr/local/lib/ruby/site_ruby/1.8/x86_64-linux/
@@ -21,6 +21,7 @@ RUN cd /gems && gem install --local --no-ri --no-rdoc \
 	 mocha -v 0.9.12 \
 	 fastercsv -v 1.5.3 \
 	 unittest-colorizer -v 0.1.0
+RUN gem install mysql --version 2.7 --no-ri --no-rdoc
 RUN adduser siuyin --disabled-password
 USER siuyin
 CMD ["bash"]
