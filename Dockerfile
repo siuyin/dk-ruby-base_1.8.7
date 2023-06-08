@@ -20,8 +20,8 @@ RUN cd /gems && gem install --local --no-ri --no-rdoc \
 	 ffi-rzmq -v 0.9.3 \
 	 mocha -v 0.9.12 \
 	 fastercsv -v 1.5.3 \
-	 unittest-colorizer -v 0.1.0
-RUN gem install mysql --version 2.7 --no-ri --no-rdoc
+	 unittest-colorizer -v 0.1.0 \
+	 json -v 1.1.5
 RUN adduser siuyin --disabled-password
 USER siuyin
 CMD ["bash"]
