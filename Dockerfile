@@ -21,7 +21,8 @@ RUN cd /gems && gem install --local --no-ri --no-rdoc \
 	 mocha -v 0.9.12 \
 	 fastercsv -v 1.5.3 \
 	 unittest-colorizer -v 0.1.0 \
-	 json -v 1.1.5
+	 json -v 1.1.5 \
+	 rb-inotify -v 0.9.8
 RUN adduser siuyin --disabled-password
 USER siuyin
 CMD ["bash"]
